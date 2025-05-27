@@ -3,7 +3,7 @@
     --secondary-color: #ffffff;
     --accent-color: #c0a080;
     --transition-speed: 0.3s;
-    --font-family: "DM Sans", sans-serif;
+    --font-family: 'DM Sans', sans-serif;
   }
   
   * {
@@ -40,7 +40,7 @@
     top: 0;
     left: 0;
     width: 100%;
-    padding: 1.5rem 2rem;
+    padding: 0.5rem 2rem;
     z-index: 100;
     display: flex;
     justify-content: space-between;
@@ -56,7 +56,7 @@
   }
   
   .luxury-brand {
-    font-family: 'Comic Sans MS', cursive;
+    font-family: 'Unbounded', cursive;
     font-size: 1.5rem;
     font-weight: 600;
     color: #000;
@@ -94,7 +94,7 @@
   .luxury-brand:hover {
     text-shadow: 
       1.2px 1.2px 3px rgba(212, 175, 55, 0.5),
-      -1.2px -1.2px 3px rgba(212, 175, 55, 0.5),
+      -1.2px -1.2px 3px rgba(143, 110, 2, 0.555),
       0 0 10px rgba(212, 175, 55, 0.2);
   }
   
@@ -125,7 +125,7 @@
   }
   
   .nav-links a:hover {
-    color: #c0a404b0;
+    color: #645500;
   }
   
   .nav-links a:hover::after {
@@ -235,6 +235,7 @@
   }
   
   .hero-logo {
+    font-family: 'Inter Tight';
     font-size: 4rem;
     font-weight: 200;
     color: var(--secondary-color);
@@ -764,7 +765,7 @@
 }
 
 .social-icon:hover {
-  color: #c0a404b0;
+  color: #ffffffc4;
 }
 
 /* Estilo BASE - Adaptado a tu paleta */
@@ -773,7 +774,7 @@
   padding: 16px 45px;
   background: transparent;
   color: #fff;
-  border: 2px solid #bda000; /* Rosa suave (similar a tus productos) */
+  border: 2px solid #ffffffe7; /* Rosa suave (similar a tus productos) */
   font-family: 'Montserrat', sans-serif;
   font-size: 1.1rem;
   font-weight: 600;
