@@ -227,7 +227,8 @@
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
-  opacity: 0.7;
+  opacity: 1;
+  filter: contrast(1.2) brightness(1.1); /* Mejor definición */
   z-index: 0;
 }
 
