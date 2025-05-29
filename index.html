@@ -116,5 +116,25 @@
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/locomotive-scroll/4.1.4/locomotive-scroll.min.js"></script>
   <script src="script.js"></script>
+ <!-- Botón flotante del chat (aparece cuando está minimizado) -->
+<div id="chat-float-button" class="float-button">
+  <img src="imagenes/WorldState_Logo.jpg" alt="Chat" width="24">
+</div>
+
+<!-- Widget del Chat (inicialmente minimizado) -->
+<div id="chat-widget" class="minimized">
+  <div class="chat-header">
+    <h3>Asistente WorldState</h3>
+    <button id="minimize-chat">✖</button>
+  </div>
+  <div class="chat-body">
+    <div id="chat-messages"></div>
+  </div>
+  <div class="chat-footer">
+    <input type="text" id="user-input" placeholder="Ej: ¿Tienen jeans?">
+    <button id="send-button">▶</button>
+  </div>
+</div>
+  <script src="bot.js"></script>
 </body>
 </html>

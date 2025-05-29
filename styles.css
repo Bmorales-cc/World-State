@@ -857,7 +857,7 @@
   background: transparent;
   color: #fff;
   border: 2px solid #ffffffe7; /* Rosa suave (similar a tus productos) */
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Unbounded', cursive;
   font-size: 1.1rem;
   font-weight: 600;
   letter-spacing: 2px;
@@ -906,4 +906,213 @@
   box-shadow: 
     0 0 10px rgba(223, 189, 0, 0.637),
     inset 0 0 5px rgba(255, 255, 255, 0.2);
+}
+/* Estilos del Chatbot */
+#chatbot-widget {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 320px;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+  font-family: 'Arial', sans-serif;
+  z-index: 1000;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  height: 400px;
+}
+
+#chat-header {
+  background: #ff6b6b;
+  color: rgba(26, 20, 0, 0.692);
+  padding: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#chat-header h3 {
+  margin: 0;
+  font-size: 16px;
+}
+
+#close-chat {
+  background: none;
+  border: none;
+  color: white;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+#chat-messages {
+  flex-grow: 1;
+  padding: 15px;
+  overflow-y: auto;
+  background: #f9f9f9;
+}
+
+#chat-input {
+  display: flex;
+  padding: 10px;
+  border-top: 1px solid #eee;
+  background: white;
+}
+
+#user-input {
+  flex-grow: 1;
+  padding: 8px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  outline: none;
+}
+
+#send-button {
+  margin-left: 10px;
+  padding: 8px 15px;
+  background: #000000c4;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+#send-button:hover {
+  background: #bd9a00e5;
+}
+
+/* Estilos de los mensajes */
+.user-message {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 10px;
+}
+
+.bot-message {
+  display: flex;
+  justify-content: flex-start;
+  margin-bottom: 10px;
+}
+
+.message-content {
+  max-width: 80%;
+  padding: 10px 15px;
+  border-radius: 18px;
+  line-height: 1.4;
+}
+
+.user-message .message-content {
+  background: #42380b;
+  color: white;
+  border-bottom-right-radius: 5px;
+}
+
+.bot-message .message-content {
+  background: white;
+  color: #333;
+  border: 1px solid #ddd;
+  border-bottom-left-radius: 5px;
+}
+
+.chat-link {
+  color: #bd9a00e5;
+  text-decoration: underline;
+}
+/* Estilo del botón flotante */
+.float-button {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  width: 60px;
+  height: 60px;
+  background: #00000000;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  box-shadow: 0 4px 12px rgb(161, 145, 0);
+  z-index: 1000;
+  transition: all 0.3s ease;
+}
+
+.float-button:hover {
+  transform: scale(1.1);
+}
+
+/* Estilo del chat widget */
+#chat-widget {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  width: 350px;
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+  overflow: hidden;
+  transition: all 0.3s ease;
+  z-index: 1001;
+}
+
+#chat-widget.minimized {
+  transform: translateY(calc(100% - 48px));
+  opacity: 0;
+  pointer-events: none;
+}
+
+.chat-header {
+  background: linear-gradient(135deg, #bd9a00 0%, #25150cb0 100%);
+  color: white;
+  padding: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#minimize-chat {
+  background: rgba(255,255,255,0.2);
+  border: none;
+  color: white;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  cursor: pointer;
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.chat-body {
+  height: 300px;
+  padding: 15px;
+  overflow-y: auto;
+  background: #fafafa;
+}
+
+.chat-footer {
+  display: flex;
+  padding: 10px;
+  border-top: 1px solid #eee;
+  background: white;
+}
+
+#user-input {
+  flex: 1;
+  padding: 12px;
+  border: 1px solid #eee;
+  border-radius: 24px;
+  outline: none;
+}
+
+#send-button {
+  width: 40px;
+  height: 40px;
+  margin-left: 8px;
+  background: #0f0f06c9;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
 }
